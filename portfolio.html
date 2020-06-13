@@ -49,25 +49,25 @@
     </header>
 
     <!--Уникальный контент-->
-    <main>
+    <main class="main-section">
       <!--Фильтры по работам-->
-      <section>
+      <section class="container">
         <h1>Наши работы</h1>
-        <nav>
-          <ul>
-            <li>
+        <nav class="filters">
+          <ul class="filters">
+            <li class="item">
               <button type="button">Все</button>
             </li>
             <li>
               <button type="button">Веб-сайты</button>
-            </li>
+            </li class="item">
             <li>
               <button type="button">Приложения</button>
-            </li>
+            </li class="item">
             <li>
               <button type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="item">
               <button type="button">Маркетинг</button>
             </li>
           </ul>
@@ -76,7 +76,7 @@
         <!--Список работ-->
         <div>
           <ul class="works-list">
-            <li>
+            <li class="flex-element">
               <a href="#">
                 <img src="./Images/Portfolio_img1.jpg" alt="#" />
                 <h2 class="title">Технокряк</h2>
@@ -88,7 +88,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="#">
                 <img src="./Images/Portfolio_img2.jpg" alt="#" />
                 <h2 class="title">
@@ -102,7 +102,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="#">
                 <img src="./Images/Portfolio_img3.jpg" alt="#" />
                 <h2 class="title">Ресторан <span lang="en">Seafood</span></h2>
@@ -114,7 +114,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="#">
                 <img src="./Images/Portfolio_img4.jpg" alt="#" />
                 <h2 class="title">Проект <span lang="en">Prime</span></h2>
@@ -126,7 +126,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="#">
                 <img src="./Images/Portfolio_img5.jpg" alt="#" />
                 <h2 class="title">Проект <span lang="en">Boxes</span></h2>
@@ -138,7 +138,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="#">
                 <img src="./Images/Portfolio_img6.jpg" alt="#" />
                 <h2 lang="en" class="title">Inspiration has no Borders</h2>
@@ -150,7 +150,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="#">
                 <img src="./Images/Portfolio_img7.jpg" alt="#" />
                 <h2 class="title">Издание Limited Edition</h2>
@@ -162,7 +162,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="#">
                 <img src="./Images/Portfolio_img8.jpg" alt="#" />
                 <h2 class="title">Проект LAB</h2>
@@ -174,7 +174,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="flex-element">
               <a href="#">
                 <img src="./Images/Portfolio_img9.jpg" alt="#" />
                 <h2 lang="en" class="title">Growing Business</h2>
@@ -193,45 +193,49 @@
 
     <!--Подвал сайта-->
     <footer class="footer">
-      <div>
-        <a href="./" class="logo-footer">
-          <span class="logo-web">Web</span> Studio</a
-        >
-        <address class="address-footer">
-          <span class="physical-address">г. Киев, пр-т Леси Украинки, 26</span
-          ><br />
-          <a href="mailto:info@example.com">info@example.com</a><br />
-          <a href="tel:+380991111111">+380991111111</a>
-        </address>
+      <div class="container address-phone-join">
+        <div>
+          <a href="./index.html" class="logo-footer">
+            <span class="logo-web">Web</span> Studio</a
+          >
+          <address class="address-footer">
+            <span class="physical-address">г. Киев, пр-т Леси Украинки, 26</span
+            ><br />
+            <a href="mailto:info@example.com">info@example.com</a><br />
+            <a href="tel:+380991111111">+380991111111</a>
+          </address>
+        </div>
+
+        <div>
+          <b class="join">Присоединяйтесь</b>
+          <ul>
+            <li>
+              <a href="#" aria-label="ссылка на instagram">instagram</a>
+            </li>
+            <li>
+              <a href="#" aria-label="ссылка на twitter">twitter</a>
+            </li>
+            <li>
+              <a href="#" aria-label="ссылка на facebook">facebook</a>
+            </li>
+            <li>
+              <a href="#" aria-label="ссылка на linkedin">linkedin</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <b class="subscribe">Подпишитесь на рассылку</b>
+        </div>
+
+        <div>
+          <b class="button-subscribe">Подписаться</b>
+        </div>
       </div>
 
-      <div>
-        <b class="join">Присоединяйтесь</b>
-        <ul>
-          <li>
-            <a href="#" aria-label="ссылка на instagram">instagram</a>
-          </li>
-          <li>
-            <a href="#" aria-label="ссылка на twitter">twitter</a>
-          </li>
-          <li>
-            <a href="#" aria-label="ссылка на facebook">facebook</a>
-          </li>
-          <li>
-            <a href="#" aria-label="ссылка на linkedin">linkedin</a>
-          </li>
-        </ul>
+      <div container>
+        <p class="copywrite">2020 | Developed by GoIT Students</p>
       </div>
-
-      <div>
-        <b class="join">Подпишитесь на рассылку</b>
-      </div>
-
-      <div>
-        <b class="button">Подписаться</b>
-      </div>
-
-      <p class="developing">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
