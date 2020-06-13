@@ -1,0 +1,257 @@
+/* цвет основной текста #212121 */
+/* вторичный цвет текста #757575 */
+/* вторичный цвет фона #AFB1B8 */
+
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+
+:root {
+  --primary-text-color: #757575;
+  --primary-white-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+/* Утиилиты */
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Header*/
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid orange;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Nav-address */
+
+.nav-address {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+/*Page header*/
+
+.page-header {
+}
+
+/*Address list*/
+
+.address .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-style: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.address .item + .item {
+  margin-left: 30px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+}
+
+/* Site nav */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .item + .item {
+  margin-left: 52px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+  text-align: center;
+  font-size: 36px;
+}
+
+/* Hero */
+.hero-title {
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  font-weight: 900;
+  background-color: var(--accent-color);
+}
+
+/* buttons */
+.button-order {
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+.button-subscribe {
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* what we do */
+.what-we-do .title {
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* Features */
+
+.feature-list .title {
+  color: var(--title-text-color);
+  text-transform: uppercase;
+}
+
+.feature-description {
+  line-height: 1.7;
+}
+
+/* Team */
+.team-list .title {
+  color: var(--title-text-color);
+  text-align: center;
+  font-size: 16px;
+}
+
+.profession {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Works-list for portfolio */
+.works-list .title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  line-height: 2;
+}
+
+.works-list .product {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.works-description {
+  color: var(--primary-white-color);
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #2196f3;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  color: var(--primary-white-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.address-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: inherit;
+  line-height: 1.7;
+}
+
+.physical-address {
+  color: var(--primary-white-color);
+}
+
+.join {
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+}
+
+.developing {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
